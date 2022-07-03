@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="header__logo">
+    <p>Lets Play</p>
+  </div>
+  <div class="header__menu">
+    <div class="spacing"></div>
+    <ul class="header__menu-function">
+      <li
+        class="header__menu-option"
+        *ngFor="let menuListOption of menuListOfOptions"
+      >
+        <a href="#">{{ menuListOption }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<img
+      src="https://cdn.pixabay.com/photo/2015/05/15/18/41/hare-769083_960_720.jpg"
+      alt="logoLetsPlay"
+      class="header__logo-image"
+    /> -->
