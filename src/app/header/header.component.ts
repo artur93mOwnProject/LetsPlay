@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { menuListOptions } from '../model/menuListOfOption';
 import { HeaderService } from './header.service';
 
 @Component({
@@ -8,11 +8,11 @@ import { HeaderService } from './header.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  menuListOfOptions: string[] = [
-    'znajdź wydarzenie',
-    'dodaj wydarzenie',
-    'o mnie',
-    'zaloguj się / wyloguj się',
+  menuListOfOptions: menuListOptions[] = [
+    { name: 'o mnie', router: 'about' },
+    { name: 'dodaj wydarzenie', router: 'add' },
+    { name: 'kontakt', router: 'contact' },
+    { name: 'zaloguj się / wyloguj się', router: 'login' },
   ];
 
   selectedMenuListOption: string = 'znajdź wydarzenie';

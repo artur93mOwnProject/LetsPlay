@@ -9,7 +9,12 @@
         class="header__menu-option"
         *ngFor="let menuListOption of menuListOfOptions"
       >
-        <a href="#">{{ menuListOption }}</a>
+        <a
+          href="#"
+          [routerLink]="menuListOption.router"
+          routerLinkActive="active"
+          >{{ menuListOption.name }}</a
+        >
       </li>
     </ul>
   </div>

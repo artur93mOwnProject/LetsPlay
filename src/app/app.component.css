@@ -1,0 +1,6 @@
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 83vh;
+  background-color: green;
+}

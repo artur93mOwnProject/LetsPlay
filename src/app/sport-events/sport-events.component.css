@@ -1,0 +1,16 @@
+.events {
+  display: none;
+  background-color: blue;
+  height: 83vh;
+  width: 300px;
+}
+
+.events.active {
+  display: block;
+}
+
+.event {
+  height: 25%;
+  background-color: red;
+  border: 1px solid black;
+}
