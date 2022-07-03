@@ -22,7 +22,7 @@ import {
   templateUrl: './canvas.component.html',
   styleUrls: ['./canvas.component.css'],
 })
-export class CanvasComponent implements OnInit, OnDestroy {
+export class CanvasComponent implements OnInit {
   @Output() map$: EventEmitter<Map> = new EventEmitter();
   @Output() zoom$: EventEmitter<number> = new EventEmitter();
   @Input() options: MapOptions = {
@@ -48,7 +48,6 @@ export class CanvasComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.map.clearAllEventListeners;
-    this.map.remove();
   }
 
   onMapReady(map: Map) {
