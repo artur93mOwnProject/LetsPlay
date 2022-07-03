@@ -10,6 +10,7 @@ import { HeaderService } from './header.service';
 export class HeaderComponent implements OnInit {
   menuListOfOptions: menuListOptions[] = [
     { name: 'o mnie', router: 'about' },
+    { name: 'przeglądaj wydarzenia', router: 'canvas' },
     { name: 'dodaj wydarzenie', router: 'add' },
     { name: 'kontakt', router: 'contact' },
     { name: 'zaloguj się / wyloguj się', router: 'login' },

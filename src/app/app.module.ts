@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { SportEventsComponent } from './sport-events/sport-events.component';
 import { CanvasComponent } from './canvas/canvas.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { CanvasComponent } from './canvas/canvas.component';
     SportEventsComponent,
     CanvasComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, LeafletModule],
   providers: [],
   bootstrap: [AppComponent],
 })
